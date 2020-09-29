@@ -1,0 +1,66 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+<world name="default">
+
+		<include>
+			<uri>model://ground_plane</uri>
+		</include>
+		
+		<include>
+			<uri>model://sun</uri>
+		</include>
+
+		<include>
+			<uri>model://construction_cone</uri>
+			<name>construction_cone</name>
+			<pose>-3.0 0 0 0 0 0</pose>
+		</include>
+
+		<include>
+			<uri>model://construction_cone</uri>
+			<name>construction_cone</name>
+			<pose>0 -3.0 0 0 0 0</pose>
+		</include>
+
+		<include>
+			<uri>model://construction_cone</uri>
+			<name>construction_cone</name>
+			<pose>3.0 0 0 0 0 0</pose>
+		</include>
+
+        <include>
+        	<uri>model://qrcode_cube</uri>
+			<name>qrcode_cube_1</name>
+			<pose>-1.120942 2.226423 1 0 0 0</pose>
+        </include> 
+
+        <include>
+        	<uri>model://qrcode_cube</uri>
+			<name>qrcode_cube_2</name>
+			<pose>-0.246604 3.0 1 0 0 0</pose>
+        </include> 
+		<include>
+        	<uri>model://qrcode_cube</uri>
+			<name>qrcode_cube_3</name>
+			<pose>0.612997 3.782221 1 0 0 0</pose>
+        </include> 
+
+        <include>
+        	<uri>model://qrcode_cube</uri>
+			<name>qrcode_cube_5</name>
+			<pose>3.944216 5.907068 1 0 0 0</pose>
+        </include> 
+		<include>
+        	<uri>model://qrcode_cube</uri>
+			<name>qrcode_cube_6</name>
+			<pose>1.585 4.616 1 0 0 0</pose>
+        </include> 
+
+        <include>
+        	<uri>model://qrcode_cube</uri>
+			<name>qrcode_cube_4</name>
+			<pose>2.66 5.44 1 0 0 0</pose>
+        </include> 
+
+</world>
+</sdf>

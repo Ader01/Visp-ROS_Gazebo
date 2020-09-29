@@ -1,0 +1,13 @@
+    material Chessboard
+    {
+      technique
+      {
+        pass
+        {
+          texture_unit
+          {
+            texture Chessboard.png
+          }
+        }
+      }
+    }

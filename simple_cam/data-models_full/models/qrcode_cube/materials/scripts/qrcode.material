@@ -1,0 +1,13 @@
+    material qrcode_cube
+    {
+      technique
+      {
+        pass
+        {
+          texture_unit
+          {
+            texture qr_cube.png
+          }
+        }
+      }
+    }

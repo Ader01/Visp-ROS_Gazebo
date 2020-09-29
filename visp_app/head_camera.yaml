@@ -1,0 +1,17 @@
+%YAML 1.0
+---
+calibration_time: "Ср 12 февраля 2020 10:22:15"
+image_width: 800
+image_height: 800
+flags: 0
+camera_matrix: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [477.214004, 0., 399.546972, 0., 477.223258, 399.104416, 0., 0., 1.]
+distortion_coefficients: !!opencv-matrix
+   rows: 1
+   cols: 5
+   dt: d
+   data: [-0.000821, 0.000495, 0.000015, -0.000007, 0.]
+avg_reprojection_error: 3
