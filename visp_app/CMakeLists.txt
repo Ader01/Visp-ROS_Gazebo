@@ -147,6 +147,8 @@ include_directories(
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(ros-grabber src/ros-grabber.cpp)
 add_executable(ros-grabber_pub src/ros-grabber_pub.cpp)
+add_executable(ros-grabber_pub_terminal src/ros-grabber_pub_terminal.cpp)
+add_executable(ros-grabber_pub_realsense src/ros-grabber_pub_realsense.cpp)
 
 ##add_executable(ros-grabber_pub src/ros-grabber_pub.cpp)
 
@@ -164,6 +166,8 @@ add_executable(ros-grabber_pub src/ros-grabber_pub.cpp)
 ## Specify libraries to link a library or executable target against
  add_dependencies(ros-grabber my_topics_generate_messages_cpp)
  add_dependencies(ros-grabber_pub my_topics_generate_messages_cpp)
+ add_dependencies(ros-grabber_pub_terminal my_topics_generate_messages_cpp)
+ add_dependencies(ros-grabber_pub_realsense my_topics_generate_messages_cpp)
 
 
 
@@ -174,6 +178,19 @@ add_executable(ros-grabber_pub src/ros-grabber_pub.cpp)
   ${VISP_LIBRARIES}
  )
   target_link_libraries(ros-grabber_pub
+  ${OpenCV_LIBRARIES} 
+  ${catkin_LIBRARIES}
+  ${visp_ros_LIBRARIES}
+  ${VISP_LIBRARIES}
+ )
+
+  target_link_libraries(ros-grabber_pub_terminal
+  ${OpenCV_LIBRARIES} 
+  ${catkin_LIBRARIES}
+  ${visp_ros_LIBRARIES}
+  ${VISP_LIBRARIES}
+ )
+   target_link_libraries(ros-grabber_pub_realsense
   ${OpenCV_LIBRARIES} 
   ${catkin_LIBRARIES}
   ${visp_ros_LIBRARIES}
